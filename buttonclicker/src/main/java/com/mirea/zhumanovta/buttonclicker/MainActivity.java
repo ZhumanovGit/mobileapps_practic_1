@@ -21,15 +21,17 @@ public class MainActivity extends AppCompatActivity {
         textViewStudent = findViewById(R.id.tvOut);
         btnWhoAmI = findViewById(R.id.btnWhoAmI);
         btnItIsNotMe = findViewById(R.id.btnItsNotMe);
-        View.OnClickListener oclBtnWhoAmI = new View.OnClickListener()  {
+        View.OnClickListener oclBtnWhoAmI = new View.OnClickListener() {
             @Override
-            public void onClick(View v){
-                textViewStudent.setText("мой номер по списку № 8");
+            public void onClick(View v) {
+                textViewStudent.setText("мой номер по списку 6");
             }
         };
         btnWhoAmI.setOnClickListener(oclBtnWhoAmI);
-        public void onMyButtonClick(View view){
-            Toast.makeText(this, "еще один способ!")
-        }
+
     }
+    public void onMyButtonClick(View view){
+        textViewStudent.setText("Это не я сделал");
+    }
+
 }
