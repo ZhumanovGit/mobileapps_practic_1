@@ -1,0 +1,21 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "Lesson!"
+include ':app'
+include ':layouttype'
+include ':layouttype:control_lesson1'
+include ':layouttype:control_lesson12'
+include ':control_lesson_1'
+include ':buttonclicker'
